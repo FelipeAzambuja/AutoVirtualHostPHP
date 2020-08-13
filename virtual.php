@@ -17,7 +17,7 @@ foreach(glob('*') as $value){
 	ServerName <?=$value?>.test
 	ServerAlias *.<?=$value?>.test	
 	<Directory /var/www/<?=$value?>>
-		AllOverride All
+		AllowOverride All
 		Require all granted
 	</Directory>
 	ErrorLog /var/www/<?=$value?>/error.log
@@ -27,7 +27,7 @@ foreach(glob('*') as $value){
 	ServerName <?=$value?>.test
 	ServerAlias *.<?=$value?>.test	
 	<Directory /var/www/<?=$value?>>
-		AllOverride All
+		AllowOverride All
 		Require all granted
 	</Directory>
 	ErrorLog /var/www/<?=$value?>/error.log
